@@ -1,2 +1,57 @@
-#tela
+#:kivy 2.3.0
+
+#Item:
+#       configuraçoes: valor
+
+#texto = Label
+
+#botao = Button: 
+
+<ToDoList>:
+    GridLayout:
+        cols: 1
+        spacing: 10
+        padding: 10
+        
+        # Adicionando 10 linhas à tabela
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            height: '48dp'
+            spacing: 10
+
+            # Caixa de texto para a tarefa
+            TextInput:
+                id: task_input1
+                hint_text: "Tarefa 1"
+                background_color: 0, 0, 0, 0  # Transparente
+                foreground_color: 1, 1, 1, 1  # Texto branco
+                font_size: '16sp'
+
+            # Caixa de seleção para fazer check
+            CheckBox:
+                id: check_box1
+                color: 1, 1, 1, 1  # Cor do texto branco
+
+        GridLayout:
+            cols: 2
+            size_hint_y: None
+            height: '48dp'
+            spacing: 10
+
+            # Caixa de texto para a tarefa
+            TextInput:
+                id: task_input2
+                hint_text: "Tarefa 2"
+                background_color: 0, 0, 0, 0  # Transparente
+                foreground_color: 1, 1, 1, 1  # Texto branco
+                font_size: '16sp'
+
+            # Caixa de seleção para fazer check
+            CheckBox:
+                id: check_box2
+                color: 1, 1, 1, 1  # Cor do texto branco
+
+        # Adicione mais grades conforme necessário para mais tarefas
+
 
