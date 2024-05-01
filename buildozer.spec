@@ -22,7 +22,7 @@ orientation = portrait
 version = 1.0.0
 
 # Arquiteturas Android para construir (arm64-v8a e armeabi-v7a são comuns)
-android.archs = arm64-v8a armeabi-v7a
+android.archs = arm64-v8a, armeabi-v7a
 
 # Permissões necessárias (por exemplo, acesso à internet)
 android.permissions = INTERNET
