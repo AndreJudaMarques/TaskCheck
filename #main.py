@@ -13,7 +13,7 @@ from kivy.clock import Clock
 from kivy.uix.button import Button
 from datetime import datetime, timedelta
 
-class ToDoList(App):
+class TaskCheck(App):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.task_layouts = []  # Lista para armazenar os layouts das tarefas
@@ -138,7 +138,7 @@ class ToDoList(App):
             self.num_tasks -= 1
 
 if __name__ == '__main__':
-    ToDoList().run()
+    TaskCheck().run()
 
 
 
